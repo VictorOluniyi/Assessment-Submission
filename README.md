@@ -3,6 +3,9 @@
 #### Float Data
 <img width="752" alt="Screenshot 2024-10-20 at 23 21 50" src="https://github.com/user-attachments/assets/3936326c-24b8-42ca-80c6-5f76c697b221">
 
+### ETL process
+![carbon (3)](https://github.com/user-attachments/assets/edf5e22e-b576-474c-9009-ec7b6f30eb2f)
+
 #### Clickup Data
 <img width="791" alt="Screenshot 2024-10-20 at 23 22 58" src="https://github.com/user-attachments/assets/35ef7bce-8624-4dfe-961d-624a848da975">
 
@@ -28,6 +31,8 @@ ORDER BY Total_Allocated_Hours DESC;
 
 
 ### Question 3
+![carbon (2)](https://github.com/user-attachments/assets/a477338e-d48e-4044-ab64-572b3d383b47)
+
 #Import Spark session
 from pyspark.sql import SparkSession
 
@@ -57,10 +62,10 @@ project_hours = project_hours.orderBy("total_hours_logged", ascending=False)
 #Show the top 20 projects by hours logged
 project_hours.show(20)
 
-# Save the result to a new CSV file
+#Save the result to a new CSV file
 project_hours.write.csv("project_hours_aggregated.csv", header=True)
 
-# Stop the Spark session after processing
+#Stop the Spark session after processing
 spark.stop()
 
 ### Question 4
