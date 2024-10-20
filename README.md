@@ -7,6 +7,9 @@
 <img width="791" alt="Screenshot 2024-10-20 at 23 22 58" src="https://github.com/user-attachments/assets/35ef7bce-8624-4dfe-961d-624a848da975">
 
 ### Question 2
+![Optimized Query](https://github.com/user-attachments/assets/12091d26-df60-43f9-b056-e8115bfc6a14)
+
+
 #Create Indexes to improve JOIN and filtering performance
  CREATE INDEX idx_clickup_name_hours ON ClickUp(Name, hours);
  CREATE INDEX idx_float_name_estimed_hours ON Float(Name, Estimed_Hours);
